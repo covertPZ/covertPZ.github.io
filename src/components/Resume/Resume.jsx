@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './Resume.css'
+import styles from './Resume.css';
 
 export default () => (
-    <div>More site content will go here.</div>
+  <div className={styles.holder}>More site content will go here.</div>
 );
