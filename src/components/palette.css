@@ -1,0 +1,46 @@
+/* stylelint-disable */
+
+:root {
+    /* -- Colors */
+    --defaultPrimaryColor: rgba(0, 0, 0, 0.4);
+    --darkPrimaryColor: rgba(0, 0, 0, 0.6);
+    --almostBlack: rgba(0, 0, 0, 0.9);
+    --textColorPrimary: #F5F5F5;
+    --textColorSecondary: #212020;
+    /* Colors -- */
+    /* -- Font */
+    --fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", Ubuntu, Cantarell, "Fira Sans", Helvetica, Arial, sans-serif;
+    --fontWeightLight: 300;
+    --fontWeightNormal: 400;
+    --fontWeightMedium: 500;
+    --fontSizeCommon: 16px;
+    --fontSizeMedium: 14px;
+    --fontSizeSmall: 12px;
+    --fontSizeTiny: 10px;
+    /* Font -- */
+}
+
+@custom-media --tiny (width < 400px);
+@custom-media --small (width < 660px);
+@custom-media --medium (width < 900px);
+:export {
+    /* -- Colors */
+    black4: var(--defaultPrimaryColor);
+    black6: var(--darkPrimaryColor);
+    black9: var(--almostBlack);
+    textColorPrimary: var(--textColorPrimary);
+    textColorSecondary: var(--textColorSecondary);
+    /* Colors -- */
+    /* -- Font */
+    fontFamily: var(--fontFamily);
+    fontWeightLight: var(--fontWeightLight);
+    fontWeightNormal: var(--fontWeightNormal);
+    fontWeightMedium: var(--fontWeightMedium);
+    fontSizeCommon: var(--fontSizeCommon);
+    fontSizeMedium: var(--fontSizeMedium);
+    fontSizeSmall: var(--fontSizeSmall);
+    /* Font -- */
+}
+
+
+/* stylelint-enable */

@@ -1,0 +1,46 @@
+@import '../palette.css';
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    height: 300px;
+    background-image: url("../../../assets/images/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter: blur(1px) grayscale(90%);
+}
+
+.content {
+    z-index: 2;
+    margin: auto;
+    padding: auto;
+}
+
+.title {
+    color: orangered;
+    font-size: 3em;
+    font-weight: var(--fontWeightMedium);
+    text-shadow: #000 0 0 3px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.sub {
+    color: white;
+    font-size: 2em;
+    font-weight: var(--fontWeightMedium);
+    text-shadow: #000 0 0 3px;
+    vertical-align: center;
+    text-align: center;
+}

@@ -1,18 +1,28 @@
-<!doctype>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ryan Cullinane Portfolio">
-    <meta name="keywords" content="Ryan Cullinane, Developer">
-    <meta name="author" content="Ryan Cullinane">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Cullinane</title>
+    <title>Ryan Cullinane - Fullstack Developer</title>
+    <meta name="description" content="Personal portfolio for Ryan Cullinane">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="explanation" content="Microsoft browsers require custom 404 pages to be at least 512 bytes in length.">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
 </head>
 
 <body>
-    <h1>Welcome to my page</h1>
-    <p>I'm still working on it, so this is just a placeholder.</p>
+    <div id="react"></div>
+    <script>
+        (function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != window.location.href) {
+                window.history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+    <script src="/build/cb26624cac6d97edf71c.bundle.js"></script>
 </body>
 
 </html>
